@@ -110,7 +110,7 @@ namespace ConsoleApp25
 
         private bool SequenceEqual(List<Task> a, List<Task> b)
         {
-            return a.SequenceEqual(b);
+            return a.SequenceEqual(b);//
         }
 
 
