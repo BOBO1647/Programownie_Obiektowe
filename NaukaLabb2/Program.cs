@@ -132,7 +132,7 @@ namespace ConsoleApp25
         public string name { get; set; }
         public TaskStatus status { get; set; }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object obj)//
         {
             return obj is Task task &&
                    name == task.name &&
