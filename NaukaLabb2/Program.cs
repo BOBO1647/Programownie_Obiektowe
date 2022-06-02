@@ -76,6 +76,11 @@ namespace ConsoleApp25
             this.tasks = tasks;
         }
 
+        public Student(string name)
+        {
+            this.name = name;
+        }
+
         public void AddTask(string taskName, Task.TaskStatus taskstatus)
         {
             Task tas = new Task(taskName, taskstatus);
@@ -140,6 +145,23 @@ namespace ConsoleApp25
             Progress,
             Done,
             Rejected,
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+    }
+
+    class Classroom : Student 
+    {
+        private string name { get; set; }
+        private Person[] persons;
+
+        public Classroom(string name, Person[] persons) : base(name)
+        {
+            this.name = name;
+            this.persons = persons;
         }
 
         public override string ToString()
